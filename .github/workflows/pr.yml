@@ -41,7 +41,7 @@ jobs:
         run: |
           set -o pipefail && swift test
 
-          macos-tests:
+  watchos-tests:
           
     name: watchOS
     runs-on: watchos-latest
