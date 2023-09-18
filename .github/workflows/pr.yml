@@ -39,4 +39,4 @@ jobs:
 
       - name: Run tests
         run: |
-          set -o pipefail && swift test
+          set -o pipefail && swift test 
