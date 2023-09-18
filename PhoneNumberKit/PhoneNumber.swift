@@ -18,7 +18,6 @@ import Foundation
  - numberExtension: Extension if available. String. Optional
  - type: Computed phone number type on access. Returns from an enumeration - PNPhoneNumberType.
  */
-
 public struct PhoneNumber {
     public let numberString: String
     public let countryCode: UInt64
