@@ -71,7 +71,7 @@ public final class PhoneNumberKit {
     ///   - region: ISO 3166 compliant region code.
     ///   - ignoreType: Avoids number type checking for faster performance.
     /// - Returns: Bool
-    @objc public func isValidPhoneNumber(_ numberString: String, withRegion region: String = PhoneNumberKit.defaultRegionCode(), ignoreType: Bool = false) -> Bool {
+    public func isValidPhoneNumber(_ numberString: String, withRegion region: String = PhoneNumberKit.defaultRegionCode(), ignoreType: Bool = false) -> Bool {
         return (try? self.parse(numberString, withRegion: region, ignoreType: ignoreType)) != nil
     }
 
