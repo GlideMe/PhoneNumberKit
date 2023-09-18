@@ -40,20 +40,3 @@ jobs:
       - name: Run tests
         run: |
           set -o pipefail && swift test
-
-  watchos-tests:
-          
-    name: watchOS
-    runs-on: watchos-latest
-
-    concurrency:
-      group: ${{ github.workflow }}-${{ github.ref }}-watchos-tests
-      cancel-in-progress: true
-
-    steps:
-      - name: Checkout Repository
-        uses: actions/checkout@v3
-
-      - name: Run tests
-        run: |
-          set -o pipefail && swift test
